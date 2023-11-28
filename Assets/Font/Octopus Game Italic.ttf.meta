@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: fb78a8f0aed852d458f5699154aa1ca9
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Octopus Game
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 6b7ab36ab0e49ba45b30a42301e12bab, type: 3}
+  - {fileID: 12800000, guid: d05da268c3c40644197544a8a646adf5, type: 3}
+  - {fileID: 12800000, guid: d9e293d5236de384d8680b576c910e72, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
