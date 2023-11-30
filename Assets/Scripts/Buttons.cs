@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Buttons : MonoBehaviour
 {
@@ -14,5 +15,40 @@ public class Buttons : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void StartGame()
+    {
+        StartCoroutine(LoadSceneAsync("Level1"));
+    }  
+    
+    public void goToHelp()
+    {
+        StartCoroutine(LoadSceneAsync("Help"));
+    }
+
+    public void goToCredits()
+    {
+        StartCoroutine(LoadSceneAsync("Credits"));
+    }
+
+    public void backToMainMenu()
+    {
+        StartCoroutine(LoadSceneAsync("MainMenu"));
+    }
+
+    public void goToOptions()
+    {
+        StartCoroutine(LoadSceneAsync("Options"));
+    }
+
+    public void closeGame()
+    {
+        Application.Quit();
+    }
+    private IEnumerator LoadSceneAsync(string levelName)
+    {
+        yield return new WaitForSeconds(3f);
+        Application.LoadLevel(levelName);
     }
 }
