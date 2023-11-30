@@ -261,6 +261,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7625527}
   - component: {fileID: 7625528}
+  - component: {fileID: 7625529}
   m_Layer: 0
   m_Name: FloorTriggerWithCode
   m_TagString: Untagged
@@ -277,8 +278,8 @@ Transform:
   m_GameObject: {fileID: 7625526}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.775856, y: 47.801704, z: -20.556625}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2.74, y: 0.5, z: -10.62}
+  m_LocalScale: {x: 1.5361, y: 35.721, z: 20.804197}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 520119999}
@@ -297,6 +298,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartAnim: {fileID: 1922471501}
   enter: 1
+--- !u!65 &7625529
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7625526}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &264872005
 GameObject:
   m_ObjectHideFlags: 0
