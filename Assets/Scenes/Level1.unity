@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1.57
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 54664de62750d094eb64481aba2af9bc, type: 2}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.020563954, g: 0.022385782, b: 0.025417581, a: 1}
+  m_IndirectSpecularColor: {r: 0.44615728, g: 0.49593025, b: 0.5745519, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2415,19 +2415,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7613258311692924066, guid: 2e6ac5efadf2a884ca0328a888940aaa, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.460958
+      value: 1.3951172
       objectReference: {fileID: 0}
     - target: {fileID: 7613258311692924066, guid: 2e6ac5efadf2a884ca0328a888940aaa, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.460958
+      value: 1.3951172
       objectReference: {fileID: 0}
     - target: {fileID: 7613258311692924066, guid: 2e6ac5efadf2a884ca0328a888940aaa, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.1774074
+      value: 0.16734219
       objectReference: {fileID: 0}
     - target: {fileID: 7613258311692924066, guid: 2e6ac5efadf2a884ca0328a888940aaa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 38.8
+      value: 70.27
       objectReference: {fileID: 0}
     - target: {fileID: 7613258311692924066, guid: 2e6ac5efadf2a884ca0328a888940aaa, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2435,7 +2435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7613258311692924066, guid: 2e6ac5efadf2a884ca0328a888940aaa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.1
+      value: 5.6
       objectReference: {fileID: 0}
     - target: {fileID: 7613258311692924066, guid: 2e6ac5efadf2a884ca0328a888940aaa, type: 3}
       propertyPath: m_LocalRotation.w
