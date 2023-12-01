@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Buttons : MonoBehaviour
 {
+    public GameObject Canvas;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +35,9 @@ public class Buttons : MonoBehaviour
 
     public void backToMainMenu()
     {
+        Time.timeScale = 0.5f;
+        Canvas.gameObject.SetActive (false);
+
         StartCoroutine(LoadSceneAsync("MainMenu"));
     }
 
@@ -46,7 +50,7 @@ public class Buttons : MonoBehaviour
     {
         Application.Quit();
     }
-    private IEnumerator LoadSceneAsync(string levelName)
+    public IEnumerator LoadSceneAsync(string levelName)
     {
         yield return new WaitForSeconds(1f);
         Application.LoadLevel(levelName);
