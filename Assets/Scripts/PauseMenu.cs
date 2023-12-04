@@ -23,10 +23,14 @@ public class PauseMenu : MonoBehaviour
             {
                 Time.timeScale = 1.0f;
                 Canvas.gameObject.SetActive (false);
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
                 IsPaused = false;
             }else
                 {
                     Time.timeScale = 0.0f;
+                    Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = true;
                     Canvas.gameObject.SetActive (true);
                     IsPaused = true;
                 }
