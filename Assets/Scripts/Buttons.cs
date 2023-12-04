@@ -32,8 +32,11 @@ public class Buttons : MonoBehaviour
     {
         StartCoroutine(LoadSceneAsync("Credits"));
     }
-
-    public void backToMainMenu()
+    public void backToMainMenuFromUI()
+    {
+        StartCoroutine(LoadSceneAsync("MainMenu"));
+    }
+    public void backToMainMenuFromLevels()
     {
         Time.timeScale = 0.5f;
         Canvas.gameObject.SetActive (false);
