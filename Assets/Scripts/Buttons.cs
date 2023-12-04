@@ -32,8 +32,11 @@ public class Buttons : MonoBehaviour
     {
         StartCoroutine(LoadSceneAsync("Credits"));
     }
-
-    public void backToMainMenu()
+    public void backToMainMenuFromUI()
+    {
+        StartCoroutine(LoadSceneAsync("MainMenu"));
+    }
+    public void backToMainMenuFromLevels()
     {
         Time.timeScale = 0.5f;
         Canvas.gameObject.SetActive (false);
@@ -52,7 +55,7 @@ public class Buttons : MonoBehaviour
     }
     public IEnumerator LoadSceneAsync(string levelName)
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         Application.LoadLevel(levelName);
     }
 }
