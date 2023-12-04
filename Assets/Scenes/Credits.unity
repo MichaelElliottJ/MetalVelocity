@@ -1030,7 +1030,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 430315911}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
-        m_MethodName: backToMainMenu
+        m_MethodName: backToMainMenuFromUI
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
