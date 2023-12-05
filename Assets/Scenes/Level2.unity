@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: blank_wall_C (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 101144, guid: 8d76d7bf209da5b44a73507c804295d4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 453906, guid: 8d76d7bf209da5b44a73507c804295d4, type: 3}
       propertyPath: m_LocalScale.x
       value: 54.143112
@@ -272,6 +276,10 @@ PrefabInstance:
     - target: {fileID: 122676, guid: b613f4d0dd5a33c429d212479c575885, type: 3}
       propertyPath: m_Name
       value: blank_wall_B (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 122676, guid: b613f4d0dd5a33c429d212479c575885, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 444980, guid: b613f4d0dd5a33c429d212479c575885, type: 3}
       propertyPath: m_LocalScale.x
@@ -839,6 +847,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: blank_wall_C (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 101144, guid: 8d76d7bf209da5b44a73507c804295d4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 453906, guid: 8d76d7bf209da5b44a73507c804295d4, type: 3}
       propertyPath: m_LocalScale.x
       value: 54.143112
@@ -1395,6 +1407,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor
       objectReference: {fileID: 0}
+    - target: {fileID: 914379696143499402, guid: 8be81364400e29940b9df0ccb66e685f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1972848151624903979, guid: 8be81364400e29940b9df0ccb66e685f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1550,6 +1566,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: glass_panel_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 135284, guid: a5cd29a93d7ae2d488fa0376d0d08462, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 428906, guid: a5cd29a93d7ae2d488fa0376d0d08462, type: 3}
       propertyPath: m_LocalScale.x
       value: 31.880413
@@ -1622,6 +1642,10 @@ PrefabInstance:
     - target: {fileID: 101144, guid: 8d76d7bf209da5b44a73507c804295d4, type: 3}
       propertyPath: m_Name
       value: blank_wall_C (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 101144, guid: 8d76d7bf209da5b44a73507c804295d4, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 453906, guid: 8d76d7bf209da5b44a73507c804295d4, type: 3}
       propertyPath: m_LocalScale.x
@@ -2106,6 +2130,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: blank_wall_B (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 122676, guid: b613f4d0dd5a33c429d212479c575885, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 444980, guid: b613f4d0dd5a33c429d212479c575885, type: 3}
       propertyPath: m_LocalScale.x
       value: 93.44762
@@ -2392,6 +2420,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: blank_wall_B (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 122676, guid: b613f4d0dd5a33c429d212479c575885, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 444980, guid: b613f4d0dd5a33c429d212479c575885, type: 3}
       propertyPath: m_LocalScale.x
       value: 93.443245
@@ -2461,6 +2493,10 @@ PrefabInstance:
     - target: {fileID: 122676, guid: b613f4d0dd5a33c429d212479c575885, type: 3}
       propertyPath: m_Name
       value: blank_wall_B (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 122676, guid: b613f4d0dd5a33c429d212479c575885, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 444980, guid: b613f4d0dd5a33c429d212479c575885, type: 3}
       propertyPath: m_LocalScale.x
