@@ -4,21 +4,36 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    public Animator Anim;
-    public GameObject muzzleFlash;
-    // Start is called before the first frame update
-    void Start()
-    {
-        muzzleFlash.SetActive(false);
-    }
+    public float damage;
+    public float range;
+    public float fireRate;
 
-    // Update is called once per frame
+    private float nextTimeToFire = 0f;
+
+    public Transform orientation;
+    public ParticleSystem muzzleFlash;
+
+    public Animator anim;
+
     void Update()
     {
-        if (Input.GetKey(KeyCode.Mouse0))
+        if (Input.GetMouseButtonDown(0))
         {
-            Anim.SetTrigger("Shoot");
-            muzzleFlash.SetActive(true);
+            Shoot();
+        }
+    }
+
+    void Shoot()
+    {
+        muzzleFlash.Play();
+        anim.SetTrigger("Shoot");
+
+        RaycastHit hit;
+        if (Physics.Raycast(orientation.position, orientation.forward, out hit, range))
+        {
+            EnemyHealth enemyHealth = hit.transform.GetComponent<EnemyHealth>();
+            if (enemyHealth != null)
+                enemyHealth.TakeDamage(damage);
         }
     }
 }
