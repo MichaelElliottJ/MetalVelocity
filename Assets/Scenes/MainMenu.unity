@@ -314,7 +314,7 @@ GameObject:
   - component: {fileID: 331480802}
   - component: {fileID: 331480804}
   m_Layer: 0
-  m_Name: BGM
+  m_Name: GameMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -443,6 +443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97d5321cc3b399349ab5ff41ed1bcd3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameMusic: {fileID: 331480801}
 --- !u!1 &333826985
 GameObject:
   m_ObjectHideFlags: 0
