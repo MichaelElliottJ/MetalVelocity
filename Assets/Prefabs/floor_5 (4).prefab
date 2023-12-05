@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7113505220349125169}
   - component: {fileID: 4833687449197707645}
   - component: {fileID: 2832910280114249810}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4839,8 +4839,8 @@ GameObject:
   - component: {fileID: 4925488489136782312}
   - component: {fileID: 4324727507518037021}
   - component: {fileID: 8131394440237965162}
-  - component: {fileID: 2772618317239030995}
-  m_Layer: 0
+  - component: {fileID: 7677889939673183017}
+  m_Layer: 6
   m_Name: floor_5 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4855,9 +4855,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8923670315944004152}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12, y: 3.62, z: -4.28}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.9994168, y: 2.3435, z: 4.395468}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7113505220349125169}
@@ -4915,8 +4915,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2772618317239030995
-BoxCollider:
+--- !u!64 &7677889939673183017
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4933,6 +4933,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.000001, y: 0.1817455, z: 4}
-  m_Center: {x: -0.00000047683716, y: 0.0908726, z: 0.00000047683716}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: d33b92b4d2f9ca8409480ae83478fd61, type: 3}

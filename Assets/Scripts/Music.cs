@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Music : MonoBehaviour
 {
+    public GameObject GameMusic;
     private void Awake()
     {
         GameObject[] musicObj = GameObject.FindGameObjectsWithTag("GameMusic");
