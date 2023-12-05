@@ -647,6 +647,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6613ab232a0dcc34f8452e2cda9105ab, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1974935667778660225}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6613ab232a0dcc34f8452e2cda9105ab, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7527845919010327991}
   m_SourcePrefab: {fileID: 100100000, guid: 6613ab232a0dcc34f8452e2cda9105ab, type: 3}
 --- !u!4 &3524083666132466308 stripped
 Transform:
@@ -679,6 +682,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7527845919010327991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4297524488861687870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb849b065d86c47458770998a666493d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 2
+  range: 10000
+  fireRate: 0
+  orientation: {fileID: 8140316861008939158}
+  muzzleFlash: {fileID: 4710497131171771715}
+  anim: {fileID: 1974935667778660225}
 --- !u!1001 &4872693828697909273
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -784,6 +805,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
+--- !u!198 &4710497131171771715 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198234346748616026, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
+  m_PrefabInstance: {fileID: 4872693828697909273}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4868407104278479885 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4300533007854612, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
