@@ -5,13 +5,15 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     Buttons Buttons;
-    public GameObject Canvas;
+    public GameObject PauseCanvas;
+    public GameObject GameUI;
     bool isMuted = false;
     bool IsPaused = false;
     // Start is called before the first frame update
     void Start()
     {
-        Canvas.gameObject.SetActive (false);
+        GameUI.gameObject.SetActive (true);
+        PauseCanvas.gameObject.SetActive (false);
     }
 
     // Update is called once per frame
@@ -21,8 +23,9 @@ public class PauseMenu : MonoBehaviour
         {
             if(IsPaused ==true)
             {
+                GameUI.gameObject.SetActive (true);
                 Time.timeScale = 1.0f;
-                Canvas.gameObject.SetActive (false);
+                PauseCanvas.gameObject.SetActive (false);
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
                 IsPaused = false;
@@ -31,8 +34,9 @@ public class PauseMenu : MonoBehaviour
                     Time.timeScale = 0.0f;
                     Cursor.lockState = CursorLockMode.None;
                     Cursor.visible = true;
-                    Canvas.gameObject.SetActive (true);
+                    PauseCanvas.gameObject.SetActive (true);
                     IsPaused = true;
+                    GameUI.gameObject.SetActive (false);
                 }
             
         }
@@ -41,8 +45,8 @@ public class PauseMenu : MonoBehaviour
     public void ResumeGame()
     {
         Time.timeScale = 1.0f;
-        Canvas.gameObject.SetActive (false);
-
+        PauseCanvas.gameObject.SetActive (false);
+        GameUI.gameObject.SetActive (true);
     }
     public void MuteButton()
     {
