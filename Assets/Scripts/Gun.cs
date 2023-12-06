@@ -17,9 +17,11 @@ public class Gun : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        nextTimeToFire += Time.deltaTime;
+        if (Input.GetMouseButtonDown(0) && fireRate < nextTimeToFire)
         {
             Shoot();
+            nextTimeToFire = 0;
         }
     }
 

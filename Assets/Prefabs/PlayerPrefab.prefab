@@ -696,7 +696,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 2
   range: 10000
-  fireRate: 0
+  fireRate: 0.5
   orientation: {fileID: 8140316861008939158}
   muzzleFlash: {fileID: 4710497131171771715}
   anim: {fileID: 1974935667778660225}
