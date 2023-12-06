@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -360710384795236313}
   m_Layer: 0
   m_Name: phyeha2.op2
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
