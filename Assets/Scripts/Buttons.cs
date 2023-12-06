@@ -49,6 +49,11 @@ public class Buttons : MonoBehaviour
         StartCoroutine(LoadSceneAsync("Options"));
     }
 
+    public void goToSandbox()
+    {
+        StartCoroutine(LoadSceneAsync("Sandbox"));
+    }
+
     public void closeGame()
     {
         Application.Quit();
