@@ -180,14 +180,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Julian: Level Desginer and SoundMan
+  m_text: 'Julian: Level Desginer and Animator
 
     Michael: Programmer
 
     Omar:
     Programmer
 
-    Brandon: Art and Level Designer'
+    Brandon: Art and Level Designer
+
+    Enemies: Ahmed and Kingy
+
+    Enviornment:
+    karboosx'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: da6e2b12d34f868409084e97366d9d8a, type: 2}
   m_sharedMaterial: {fileID: 5180688412150315821, guid: da6e2b12d34f868409084e97366d9d8a, type: 2}
@@ -592,7 +597,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 120.2, y: -151.8}
+  m_AnchoredPosition: {x: 298.5, y: -151.8}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &370717266
@@ -1027,7 +1032,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 19.3, y: -56.5}
+  m_AnchoredPosition: {x: 19.3, y: -151.3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &924275987
@@ -1159,7 +1164,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -74, y: -145.9}
+  m_AnchoredPosition: {x: -235, y: -145.9}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1125634545
