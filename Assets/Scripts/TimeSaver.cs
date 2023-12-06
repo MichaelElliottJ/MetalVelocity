@@ -1,25 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class TimeSaver : MonoBehaviour
 {
-    public static TimeSaver LT { get; private set; }
-    public string lvl1Time;
-    public string lvl2Time;
-    public int minNum1;
-    public int minNum2;
-    public int secNum1;
-    public int secNum2;
+    public TextMeshProUGUI timer;
 
-    void Awake()
+    private void Update()
     {
-        if (LT == null)
-        {
-            LT = this;
-            DontDestroyOnLoad(gameObject);
-        } else {
-            Destroy(gameObject);
-        }
+        timer.text = FormatTime(Time.time);
+    }
+
+    string FormatTime(float time)
+    {
+        int intTime = (int)time;
+        int minutes = intTime / 60;
+        int seconds = intTime % 60;
+        float fraction = time * 1000;
+        fraction = (fraction % 1000);
+        string timeText = string.Format("{0:00}:{1:00}:{2:00}", minutes, seconds, fraction);
+        return timeText;
     }
 }
