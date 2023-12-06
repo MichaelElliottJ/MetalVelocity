@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44507623, g: 0.49467218, b: 0.57376355, a: 1}
+  m_IndirectSpecularColor: {r: 0.445076, g: 0.49467212, b: 0.5737632, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -350,7 +350,7 @@ GameObject:
   - component: {fileID: 251198195}
   - component: {fileID: 251198194}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: CrosshairUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

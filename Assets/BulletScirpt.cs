@@ -10,7 +10,7 @@ public class BulletScirpt : MonoBehaviour
     void Start()
     {
         playerPos = GameObject.Find("Player").transform.position;
-        Destroy(gameObject, 2);
+        Destroy(gameObject, 5);
     }
 
     void Update()
