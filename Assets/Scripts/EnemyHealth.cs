@@ -6,15 +6,18 @@ public class EnemyHealth : MonoBehaviour
 {
     public float health;
 
-    public void TakeDamage(float damage)
+    public AudioSource deathSound;
+    public GameObject explosion;
+
+    void Start()
     {
-        health -= damage;
-        if (health <= 0f)
-            Die();
+        explosion.SetActive(false);
     }
 
-    void Die()
+    public void Die()
     {
+        deathSound.Play();
+        explosion.SetActive(true);
         Destroy(gameObject);
     }
 

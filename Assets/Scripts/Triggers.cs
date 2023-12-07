@@ -11,11 +11,15 @@ public class Triggers : MonoBehaviour
     {
         if (other.gameObject.tag == "Win")
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             StartCoroutine(transition.LoadSceneAsync("Win"));
         }
 
         if (other.gameObject.tag == "Death")
-        {
+        {   
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             StartCoroutine(transition.LoadSceneAsync("Lose"));
         }
     }

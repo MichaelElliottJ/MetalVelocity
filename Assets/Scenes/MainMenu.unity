@@ -315,7 +315,7 @@ GameObject:
   - component: {fileID: 331480804}
   m_Layer: 0
   m_Name: GameMusic
-  m_TagString: Untagged
+  m_TagString: GameMusic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -732,7 +732,7 @@ RectTransform:
   m_GameObject: {fileID: 814114777}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 8.272607, y: 4.2582874, z: 3.916027}
+  m_LocalScale: {x: 8.272607, y: 4.7505455, z: 3.916027}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1192113453}

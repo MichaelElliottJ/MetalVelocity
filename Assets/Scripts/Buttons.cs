@@ -60,7 +60,7 @@ public class Buttons : MonoBehaviour
     }
     public IEnumerator LoadSceneAsync(string levelName)
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.3f);
         Application.LoadLevel(levelName);
     }
 }

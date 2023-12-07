@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    public float damage;
     public float range;
     public float fireRate;
 
     private float nextTimeToFire = 0f;
+
+    public AudioSource fireSound;
 
     public Transform orientation;
     public ParticleSystem muzzleFlash;
@@ -29,13 +30,15 @@ public class Gun : MonoBehaviour
     {
         muzzleFlash.Play();
         anim.SetTrigger("Shoot");
+        fireSound.Play();
 
         RaycastHit hit;
         if (Physics.Raycast(orientation.position, orientation.forward, out hit, range))
         {
+            Debug.Log(hit);
             EnemyHealth enemyHealth = hit.transform.GetComponent<EnemyHealth>();
             if (enemyHealth != null)
-                enemyHealth.TakeDamage(damage);
+                enemyHealth.Die();
         }
     }
 }

@@ -144,7 +144,7 @@ public class PlayerMovement : MonoBehaviour
         else if (Input.GetKey(crouchKey))
         {
             state = MovementState.crouching;
-            moveSpeed = crouchSpeed;
+            desiredMoveSpeed = crouchSpeed;
         }
         else if (grounded && Input.GetKey(sprintKey))
         {
@@ -183,7 +183,7 @@ public class PlayerMovement : MonoBehaviour
 
         while (time < difference)
         {
-            moveSpeed = Mathf.Lerp(startValue, desiredMoveSpeed, time / difference);
+            desiredMoveSpeed = Mathf.Lerp(startValue, desiredMoveSpeed, time / difference);
 
             if (OnSlope())
             {
