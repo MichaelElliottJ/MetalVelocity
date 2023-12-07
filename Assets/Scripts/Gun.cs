@@ -35,7 +35,6 @@ public class Gun : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(orientation.position, orientation.forward, out hit, range))
         {
-            Debug.Log(hit);
             EnemyHealth enemyHealth = hit.transform.GetComponent<EnemyHealth>();
             if (enemyHealth != null)
                 enemyHealth.Die();

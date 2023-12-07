@@ -3,16 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class TimeSaver : MonoBehaviour
+public class WinTimer : MonoBehaviour
 {
-    public TextMeshProUGUI timer;
+    public TextMeshProUGUI totalTime;
 
-    private void Update()
+    void Start()
     {
-        float currentTime = Time.time;
-        timer.text = FormatTime(currentTime);
-
-        SaveTime(currentTime);
+        float lvlOneTime = PlayerPrefs.GetFloat("SavedTime", 0f);
+        totalTime.text = "Total Time: " + FormatTime(lvlOneTime);
     }
 
     string FormatTime(float time)
@@ -24,11 +22,5 @@ public class TimeSaver : MonoBehaviour
         fraction = (fraction % 1000);
         string timeText = string.Format("{0:00}:{1:00}:{2:00}", minutes, seconds, fraction);
         return timeText;
-    }
-
-    void SaveTime(float time)
-    {
-        PlayerPrefs.SetFloat("SavedTime", time);
-        PlayerPrefs.Save();
     }
 }
