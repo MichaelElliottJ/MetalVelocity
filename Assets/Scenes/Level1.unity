@@ -3661,7 +3661,7 @@ GameObject:
   - component: {fileID: 1036695625}
   - component: {fileID: 1036695624}
   m_Layer: 6
-  m_Name: Cube (29)
+  m_Name: DeathBarrier
   m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7145,7 +7145,7 @@ GameObject:
   - component: {fileID: 2130926329}
   - component: {fileID: 2130926328}
   m_Layer: 6
-  m_Name: Cube (23)
+  m_Name: Win
   m_TagString: Win
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
