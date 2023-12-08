@@ -313,6 +313,7 @@ MonoBehaviour:
     Left
     Shift - SPrint
 
+    E - Grapple
 
 '
   m_isRightToLeft: 0
