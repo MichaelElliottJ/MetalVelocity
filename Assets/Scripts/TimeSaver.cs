@@ -2,17 +2,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class TimeSaver : MonoBehaviour
 {
     public TextMeshProUGUI timer;
+    string sceneName;
+
+    static float levelOneTime;
+    static float levelTwoTime;
+
+    bool isCounting = false;
+
+    void Start()
+    {
+        levelOneTime = 0;
+        levelTwoTime = 0;
+    }
 
     private void Update()
     {
-        float currentTime = Time.time;
-        timer.text = FormatTime(currentTime);
+        sceneName = SceneManager.GetActiveScene().ToString();
 
-        SaveTime(currentTime);
+        if (sceneName == "Level1")
+            isCounting = true;
+
+        if (isCounting)
+        {
+            float currentTime = Time.time;
+            timer.text = FormatTime(currentTime);
+
+            SaveTime(currentTime);
+        }
     }
 
     string FormatTime(float time)

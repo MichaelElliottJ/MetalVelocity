@@ -18,9 +18,7 @@ public class Triggers : MonoBehaviour
 
         if (other.gameObject.tag == "Death")
         {   
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            StartCoroutine(transition.LoadSceneAsync("Lose"));
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
