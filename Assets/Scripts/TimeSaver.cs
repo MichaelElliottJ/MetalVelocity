@@ -9,23 +9,17 @@ public class TimeSaver : MonoBehaviour
     public TextMeshProUGUI timer;
     string sceneName;
 
-    static float levelOneTime;
-    static float levelTwoTime;
-
     bool isCounting = false;
-
-    void Start()
-    {
-        levelOneTime = 0;
-        levelTwoTime = 0;
-    }
 
     private void Update()
     {
         sceneName = SceneManager.GetActiveScene().ToString();
 
-        if (sceneName == "Level1")
+        if (sceneName == "Level1" || sceneName == "Level2" || sceneName == "Level3")
             isCounting = true;
+        
+        else
+            isCounting = false;
 
         if (isCounting)
         {
