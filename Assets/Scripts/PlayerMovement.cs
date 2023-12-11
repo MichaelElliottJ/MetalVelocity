@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -34,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
     public KeyCode jumpKey = KeyCode.Space;
     public KeyCode sprintKey = KeyCode.LeftShift;
     public KeyCode crouchKey = KeyCode.LeftControl;
+    public KeyCode resetKey = KeyCode.R;
 
     [Header("Ground Check")]
     public float playerHeight;
@@ -128,6 +130,11 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyUp(crouchKey))
         {
            transform.localScale = new Vector3(transform.localScale.x, startYScale, transform.localScale.z); 
+        }
+
+        if (Input.GetKey(resetKey))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
