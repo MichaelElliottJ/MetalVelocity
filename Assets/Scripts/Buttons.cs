@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class Buttons : MonoBehaviour
 {
     public GameObject Canvas;
+
+    public TimeSaver ts;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,7 @@ public class Buttons : MonoBehaviour
 
     public void StartGame()
     {
+        ts.currentTime = 0;
         StartCoroutine(LoadSceneAsync("Level1"));
     }  
     

@@ -30,6 +30,8 @@ public class TimeSaver : MonoBehaviour
     {
         float currentTime = Time.time;
         timer.text = FormatTime(currentTime);
+
+        SaveTime(currentTime);
     }
 
     string FormatTime(float time)
@@ -41,5 +43,11 @@ public class TimeSaver : MonoBehaviour
         fraction = (fraction % 1000);
         string timeText = string.Format("{0:00}:{1:00}:{2:00}", minutes, seconds, fraction);
         return timeText;
+    }
+
+    void SaveTime(float time)
+    {
+        PlayerPrefs.SetFloat("SavedTime", time);
+        PlayerPrefs.Save();
     }
 }

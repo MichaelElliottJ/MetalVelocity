@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44507623, g: 0.49467218, b: 0.57376355, a: 1}
+  m_IndirectSpecularColor: {r: 0.445076, g: 0.49467212, b: 0.5737632, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1465,7 +1465,7 @@ GameObject:
   - component: {fileID: 862010991}
   - component: {fileID: 862010990}
   - component: {fileID: 862010989}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube (6)
   m_TagString: Death
   m_Icon: {fileID: 0}
@@ -5163,10 +5163,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6416673315410184099, guid: 0213537feee214f42a36d0aa2334b56d, type: 3}
-      propertyPath: pm
-      value: 
-      objectReference: {fileID: 1082334168434813503}
     - target: {fileID: 7013614208167918034, guid: 0213537feee214f42a36d0aa2334b56d, type: 3}
       propertyPath: m_Name
       value: PlayerPrefab
@@ -5176,17 +5172,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0213537feee214f42a36d0aa2334b56d, type: 3}
---- !u!114 &1082334168434813503 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1669188399544187595, guid: 0213537feee214f42a36d0aa2334b56d, type: 3}
-  m_PrefabInstance: {fileID: 1082334168434813502}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96ee9e25d837d84692dc608c97928cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
