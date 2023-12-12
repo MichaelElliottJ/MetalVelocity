@@ -8,6 +8,9 @@ TagManager:
   - GameMusic
   - Win
   - Enemy
+  - LevelOneWin
+  - LevelTwoWin
+  - LevelThreeWin
   layers:
   - Default
   - TransparentFX

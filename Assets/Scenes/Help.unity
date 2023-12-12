@@ -313,7 +313,7 @@ MonoBehaviour:
     Left
     Shift - SPrint
 
-    E + Spacebar - Grapple (Only for level 3)
+    E - Grapple (Only for level 3)
 
 '
   m_isRightToLeft: 0
@@ -673,7 +673,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Avoid the red lasers and pit and shoot the red drones
+  m_text: Avoid the red lasers and pit  shoot the red drones
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: da6e2b12d34f868409084e97366d9d8a, type: 2}
   m_sharedMaterial: {fileID: 5180688412150315821, guid: da6e2b12d34f868409084e97366d9d8a, type: 2}

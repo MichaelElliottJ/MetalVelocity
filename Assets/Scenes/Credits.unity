@@ -185,14 +185,14 @@ MonoBehaviour:
     Michael: Programmer
 
     Omar:
-    Programmer
+    Programmer and art
 
     Brandon: Art and Level Designer
 
-    Enemies: Ahmed and Kingy
+    Enemies: Ahmed and
+    Kingy
 
-    Enviornment:
-    karboosx'
+    Enviornment: karboosx'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: da6e2b12d34f868409084e97366d9d8a, type: 2}
   m_sharedMaterial: {fileID: 5180688412150315821, guid: da6e2b12d34f868409084e97366d9d8a, type: 2}
