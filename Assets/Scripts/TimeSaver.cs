@@ -7,15 +7,14 @@ using UnityEngine.SceneManagement;
 public class TimeSaver : MonoBehaviour
 {
     public TextMeshProUGUI timer;
-    string sceneName;
 
     bool isCounting = false;
 
     private void Update()
     {
-        sceneName = SceneManager.GetActiveScene().ToString();
+        Scene sceneName = SceneManager.GetActiveScene();
 
-        if (sceneName == "Level1" || sceneName == "Level2" || sceneName == "Level3")
+        if (sceneName.name == "Level1" || sceneName.name == "Level2" || sceneName.name == "Level3")
             isCounting = true;
         
         else

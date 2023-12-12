@@ -152,6 +152,8 @@ GameObject:
   - component: {fileID: 2071305667280784061}
   - component: {fileID: 436415085789195575}
   - component: {fileID: 8836305363447165403}
+  - component: {fileID: 2076138991438997907}
+  - component: {fileID: 6416673315410184099}
   m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
@@ -216,7 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96ee9e25d837d84692dc608c97928cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 7
+  walkSpeed: 10
   sprintSpeed: 10
   slideSpeed: 30
   wallrunSpeed: 5
@@ -231,6 +233,7 @@ MonoBehaviour:
   jumpKey: 32
   sprintKey: 304
   crouchKey: 99
+  resetKey: 114
   playerHeight: 2
   whatIsGround:
     serializedVersion: 2
@@ -260,7 +263,7 @@ MonoBehaviour:
   playerObj: {fileID: 1570088837519195626}
   pm: {fileID: 1669188399544187595}
   maxSlideTime: 0.75
-  slideForce: 200
+  slideForce: 20
   slideYScale: 0.5
   startYScale: 1
   slideKey: 306
@@ -316,10 +319,37 @@ MonoBehaviour:
     m_Bits: 64
   lr: {fileID: 4540725923325025387}
   maxGrappleDistance: 25
-  grappleDelayTime: 0.25
+  grappleDelayTime: 0.1
   overshootYAxis: 2
   grapplingCd: 1
   grappleKey: 101
+--- !u!114 &2076138991438997907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2516055391547401686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 843f8c5e304ae114ebe396a664951ddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transition: {fileID: 0}
+--- !u!114 &6416673315410184099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2516055391547401686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 489abe670948acc48a66768d9ea67714, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gun: {fileID: 7527845919010327991}
+  enemyTag: Enemy
 --- !u!1 &2828366476458270998
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,10 +792,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb849b065d86c47458770998a666493d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 10000
+  damage: 1
   fireRate: 0.5
-  fireSound: {fileID: 0}
-  orientation: {fileID: 8140316861008939158}
+  fireDistance: 10000
+  bulletPoint: {fileID: 8140316861008939158}
   muzzleFlash: {fileID: 4710497131171771715}
   anim: {fileID: 1974935667778660225}
 --- !u!108 &2369971816143813628
@@ -851,7 +881,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 3e59bf3e0877cad4fa7591b4d3b53cd0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

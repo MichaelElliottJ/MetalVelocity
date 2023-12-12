@@ -4,40 +4,52 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    public float range;
+    [Header ("Gun Stuff")]
+    public float damage;
     public float fireRate;
+    public float fireDistance;
+    public Transform bulletPoint;
 
-    private float nextTimeToFire = 0f;
-
-    public AudioSource fireSound;
-
-    public Transform orientation;
     public ParticleSystem muzzleFlash;
-
     public Animator anim;
 
-    void Update()
+    private bool fireCooldown;
+    private RaycastHit hit;
+    
+    public void Fire(string enemyTag)
     {
-        nextTimeToFire += Time.deltaTime;
-        if (Input.GetMouseButtonDown(0) && fireRate < nextTimeToFire)
-        {
-            Shoot();
-            nextTimeToFire = 0;
-        }
-    }
+        if (fireCooldown) return;
 
-    void Shoot()
-    {
+        Ray ray = new Ray();
+        ray.origin = bulletPoint.position;
+        ray.direction = bulletPoint.TransformDirection(Vector3.forward);
+
         muzzleFlash.Play();
         anim.SetTrigger("Shoot");
-        fireSound.Play();
 
-        RaycastHit hit;
-        if (Physics.Raycast(orientation.position, orientation.forward, out hit, range))
+        Debug.DrawRay(ray.origin, ray.direction * fireDistance, Color.blue);
+
+        if (Physics.Raycast(ray, out hit, fireDistance))
         {
-            EnemyHealth enemyHealth = hit.transform.GetComponent<EnemyHealth>();
-            if (enemyHealth != null)
-                enemyHealth.Die();
+            if (hit.collider.CompareTag(enemyTag))
+            {
+                EnemyHealth eHealth = hit.collider.GetComponent<EnemyHealth>();
+                eHealth.Die();
+            }
         }
+
+        fireCooldown = true;
+        StartCoroutine(ResetCooldown());
+    }
+
+    private IEnumerator ResetCooldown()
+    {
+        yield return new WaitForSeconds(fireRate);
+        fireCooldown = false;
+    }
+
+    public bool UseTap()
+    {
+        return fireRate == 0;
     }
 }
