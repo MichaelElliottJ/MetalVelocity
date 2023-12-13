@@ -22,7 +22,7 @@ public class Buttons : MonoBehaviour
 
     public void StartGame()
     {
-        //ts.currentTime = 0;
+        ts.ResetTimer();
         StartCoroutine(LoadSceneAsync("Level1"));
     }  
     

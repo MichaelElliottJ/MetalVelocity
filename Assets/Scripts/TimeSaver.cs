@@ -9,6 +9,7 @@ public class TimeSaver : MonoBehaviour
     public TextMeshProUGUI timer;
 
     bool isCounting = false;
+    private float currentTime;
 
     private void Update()
     {
@@ -19,6 +20,7 @@ public class TimeSaver : MonoBehaviour
         
         else
             isCounting = false;
+            timer.text = " ";
 
         if (isCounting)
         {
@@ -28,7 +30,7 @@ public class TimeSaver : MonoBehaviour
 
     void StartTimer()
     {
-        float currentTime = Time.time;
+        currentTime = Time.time;
         timer.text = FormatTime(currentTime);
 
         SaveTime(currentTime);
@@ -49,5 +51,10 @@ public class TimeSaver : MonoBehaviour
     {
         PlayerPrefs.SetFloat("SavedTime", time);
         PlayerPrefs.Save();
+    }
+
+    public void ResetTimer()
+    {
+        currentTime = 0f;
     }
 }
