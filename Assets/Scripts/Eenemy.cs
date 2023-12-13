@@ -7,6 +7,7 @@ public class Eenemy : MonoBehaviour
 {
 
     public GameObject enemyBullet;
+    public AudioSource fire;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +22,8 @@ public class Eenemy : MonoBehaviour
 
     void ShootAtPlayer()
     {
-
+        fire.Play();
         Instantiate(enemyBullet, transform.position, Quaternion.identity);
-
     }
 
 }

@@ -304,16 +304,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Left Click - Shoot
-
-    W A S D - Move
+  m_text: 'W A S D - Move
 
     Left Ctrl - Slide
 
-    Left
-    Shift - SPrint
+    Left Shift - SPrint
 
-    E - Grapple (Only for level 3)
+    E
+    - Grapple (Only for level 3)
 
 '
   m_isRightToLeft: 0
@@ -650,7 +648,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 19.3, y: 118.55}
+  m_AnchoredPosition: {x: 19.3, y: 94.3}
   m_SizeDelta: {x: 564.744, y: 87.819}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &319239147
@@ -673,7 +671,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Avoid the red lasers and pit  shoot the red drones
+  m_text: 'Avoid the red lasers and pit '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: da6e2b12d34f868409084e97366d9d8a, type: 2}
   m_sharedMaterial: {fileID: 5180688412150315821, guid: da6e2b12d34f868409084e97366d9d8a, type: 2}
@@ -1157,6 +1155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Canvas: {fileID: 0}
+  ts: {fileID: 0}
 --- !u!4 &776402508
 Transform:
   m_ObjectHideFlags: 0

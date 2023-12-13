@@ -17,6 +17,7 @@ public class Grappling : MonoBehaviour
     public float overshootYAxis;
     
     private Vector3 grapplePoint;
+    public AudioSource grappleSound;
 
     [Header ("Cooldown")]
     public float grapplingCd;
@@ -53,6 +54,8 @@ public class Grappling : MonoBehaviour
         grappling = true;
 
         pm.freeze = false;
+
+        grappleSound.Play();
 
         RaycastHit hit;
         if (Physics.Raycast(cam.position, cam.forward, out hit, maxGrappleDistance, whatIsGrappleable))

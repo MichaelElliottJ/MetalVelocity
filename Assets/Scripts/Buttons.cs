@@ -49,7 +49,7 @@ public class Buttons : MonoBehaviour
 
     public void goToOptions()
     {
-        StartCoroutine(LoadSceneAsync("Options"));
+        StartCoroutine(LoadSceneAsync("Settings"));
     }
 
     public void MuteButton()
