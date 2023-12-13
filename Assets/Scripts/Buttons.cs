@@ -22,7 +22,7 @@ public class Buttons : MonoBehaviour
 
     public void StartGame()
     {
-        ts.currentTime = 0;
+        //ts.currentTime = 0;
         StartCoroutine(LoadSceneAsync("Level1"));
     }  
     
@@ -61,6 +61,7 @@ public class Buttons : MonoBehaviour
     {
         Application.Quit();
     }
+   
     public IEnumerator LoadSceneAsync(string levelName)
     {
         yield return new WaitForSeconds(0.3f);
