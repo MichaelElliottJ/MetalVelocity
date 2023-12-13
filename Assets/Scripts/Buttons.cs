@@ -52,10 +52,21 @@ public class Buttons : MonoBehaviour
         StartCoroutine(LoadSceneAsync("Options"));
     }
 
+    public void MuteButton()
+    {
+         AudioListener.volume = 0;
+    }
+    public void UnMuteButton()
+    {
+        AudioListener.volume = 0.2f;
+    }
+
     public void goToSandbox()
     {
         StartCoroutine(LoadSceneAsync("Sandbox"));
     }
+
+    
 
     public void closeGame()
     {
